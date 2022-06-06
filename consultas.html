@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apresentação Banco de Dados</title>
+    <link rel="stylesheet" href="/Css/reset.css" />
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!--CABEÇALHO-->
+      <div class="cabecalho">
+        <h1><img class="logo" src="/Resouces/logo-ft.png" /></h1>
+        <nav>
+          <ul>
+            <li>
+              <a
+                class="botao"
+                href="index.html"
+                title="Voltar para o dashboard"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="botao" href="equipe.html" title="Integrantes do grupo">
+                Equipe
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="titulo">Consultas</h1>
+
+      <!--<li><Primeira consulta</li>-->
+      <div class="consulta">
+        <h3 class="tituloConsulta">
+          Pagamentos dos nossos clientes
+        </h3>
+        <div class="estruturaConsulta">
+          <iframe
+            class="imgConsulta"
+            width="500"
+            height="400"
+            src="https://datastudio.google.com/embed/reporting/a7335984-99ad-4109-a6c7-1939ff0b3db7/page/EbbuC"
+            frameborder="0"
+          ></iframe>
+          <div style="display: inline-block;">
+            <pre class="codigoConsulta">
+<code class="azul">SELECT</code>
+  forma_pag,
+  <code class="cinza">count</code>(forma_pag)
+<code class="azul">FROM</code>
+  Pagamento_pedido
+<code class="azul">GROUP BY</code>
+  forma_pag
+<code class="azul">ORDER BY</code>
+  count(forma_pag) desc;
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <!--<li><Segunda consulta</li>-->
+      <div class="consulta">
+        <h3 class="tituloConsulta">Top 5 estados com mais clientes</h3>
+        <div class="estruturaConsulta">
+          <iframe
+            class="imgConsulta"
+            width="500"
+            height="400"
+            src="https://datastudio.google.com/embed/reporting/390cd7aa-186d-40c5-b667-e63197a62a53/page/6dbuC"
+            frameborder="0"
+          ></iframe>
+          <div style="display: inline-block;">
+            <pre class="codigoConsulta">
+<code class="azul">SELECT</code>
+  Estado,
+  <code class="cinza">count</code>(Estado)
+<code class="azul">FROM</code>
+  Restaurante
+ <code class="azul">GROUP BY</code>
+  Estado
+<code class="azul">ORDER BY</code>
+  count(Estado) desc;
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <!--<li><Terceira consulta</li>-->
+      <div class="consulta">
+        <h3 class="tituloConsulta">Distribuição de Fornecedores</h3>
+        <div class="estruturaConsulta">
+          <iframe
+            class="imgConsulta"
+            width="500"
+            height="400"
+            src="https://datastudio.google.com/embed/reporting/65c6845e-9541-4541-bda7-cc1a083f304c/page/0fbuC"
+            frameborder="0"
+          ></iframe>
+          <div style="display: inline-block;">
+            <pre class="codigoConsulta">
+<code class="azul">SELECT</code>
+  Estado_sup,
+  <code class="cinza">count</code>(Estado_sup)
+<code class="azul">FROM</code>
+  Supermercado
+<code class="azul">GROUP BY</code>
+  Estado_sup
+<code class="azul">ORDER BY</code>
+  count(Estado_sup) desc;
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <!--<li><Quarta consulta</li>-->
+      <div class="consulta">
+        <h3 class="tituloConsulta">
+          Quantidade de produtos pela data de vencimento
+        </h3>
+        <div class="estruturaConsulta">
+          <iframe
+            class="imgConsulta"
+            width="500"
+            height="400"
+            src="https://datastudio.google.com/embed/reporting/441afd6e-48f5-40f3-a5ac-357d1747b97d/page/ngbuC"
+            frameborder="0"
+          ></iframe>
+          <div style="display: inline-block;">
+            <pre class="codigoConsulta">
+  <code class="azul">SELECT</code>
+  Data_venc,
+    <code class="cinza">count</code>(Data_venc)
+  <code class="azul">FROM</code>
+    Produto
+  <code class="azul">GROUP BY</code>
+  Data_venc
+  <code class="azul">ORDER BY</code>
+    count(Data_venc);
+            </pre>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img class="logo" src="/Resouces/logo-ft.png" />
+      <p class="copyright">&copy; Copyright FoodTracker - 2022</p>
+    </footer>
+  </body>
+</html>

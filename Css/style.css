@@ -1,0 +1,160 @@
+/*CABEÇALHO*/
+header {
+  background: orange;
+  padding: 0;
+}
+.logo {
+  height: 160px;
+}
+.cabecalho {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+.cabecalho img {
+  background: url("logo-ft.png");
+}
+nav {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.botao {
+  border-radius: 5px;
+  color: white;
+  background: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.botao:hover {
+  border-radius: 5px;
+  color: orange;
+  background: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*CONSULTA*/
+.consulta {
+  background-color: #ffffff;
+  border-color: #000000;
+  margin: 0 5% 0 5%;
+  padding: 2.5% 10% 2.5% 10%;
+}
+.tituloConsulta {
+  text-align: center;
+  margin: 5% 0 0 0;
+  font-size: 25px;
+  font-family: fantasy;
+  color: black;
+}
+.estruturaConsulta {
+  width: 100%;
+  height: 450px;
+  vertical-align: top;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: #6b6761 !important;
+  border-style: solid;
+  padding: 5%;
+}
+.codigoConsulta {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+  padding: 20px;
+  font-size: 25px;
+  border-color: #b6b6b6;
+  background-color: #f0efef;
+  border-radius: 5px;
+  transform: translate(0, -20%);
+}
+.imgConsulta {
+  width: 50%;
+  margin: 0 7.5% 0 0;
+  transform: translate(0, 5%);
+}
+
+/*Dashboard*/
+.dashboard {
+  position: relative;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 0;
+  margin-bottom: 2.5%;
+}
+
+/*RODAPÉ*/
+footer {
+  text-align: center;
+  background: black;
+  padding: 40px 0;
+}
+.copyright {
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+/*EXTRAS*/
+.titulo {
+  text-transform: uppercase;
+  margin: 2.5% 0 2.5% 0;
+  font-size: 40px;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+.subTitulo {
+  text-transform: uppercase;
+  margin: 5% 0 0 0;
+  font-size: 35px;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+.nome {
+  margin: 2.5% 0 2.5% 0;
+  font-size: 30px;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+.nome:hover {
+  margin: 2.5% 0 2.5% 0;
+  font-size: 30px;
+  font-family: fantasy;
+  color: orange;
+  text-align: center;
+}
+.azul {
+  color: #0101fd;
+  font-size: 25px;
+}
+.cinza {
+  color: #3c7034;
+  font-size: 25px;
+}
+.div1 {
+  display: inline-block;
+}
